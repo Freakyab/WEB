@@ -2,37 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NavBar</title>
-    <link rel="stylesheet" href="pro_style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NavBar</title>
+  <link rel="stylesheet" href="pro_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
 </head>
 
 <body>
-    <nav>
-        <div>
-            <a id="logo" href="">FAB</a>
-        </div>
+  <nav>
+    <div>
+      <a id="logo" href="">FAB</a>
+    </div>
 
-        </div>
-        <i id="one" class="fa-solid fa-sun"></i>
-        </div>
-        <div class="table">
-            <ul>
-                <li><a href="#">Contant</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Home</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container" >
-        <img src="logo.jpg" class="fab-logo">
-        <!-- <span class="p1">
+    </div>
+    <i id="one" class="fa-solid fa-sun"></i>
+    </div>
+    <div class="table">
+      <ul>
+        <li><a href="#">Contant</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <img src="logo.jpg" class="fab-logo">
+    <!-- <span class="p1">
         <p class ="typewriter">
             Hi, I am FreakyAB</p>
         </span>
@@ -41,11 +42,110 @@
             <p id="p0" class="typewriter">
                 Photographer</p>
         </span> -->
-        <p #id ="align">I am <span class="typed-text"><span class="cursor">&nbsp;</span></p>
-        </span></div>
+    <p #id="align">I am <span class="typed-text"><span class="cursor">&nbsp;</span></p>
+    </span>
+  </div>
+</div>
+<section>
+  <div id = "photo">Photographer</div>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide timeline-slide">
+        
+        <div style="justify-content: center; align-items: center">
+          <img class="imgs_" src="20190917_120504.jpg" align = centre>
+          
+          <!-- <span><img src="20190917_120504.jpg"></span> -->
+        </div>
+      </div>
+      <div class="swiper-slide timeline-slide">
+        <span>
+          <img class="imgs_" src="2.jpg"></span>
+      </div>
+      <div class="swiper-slide timeline-slide">
+        <span>
+          <img class="imgs_" src="3.jpg"></span>
+      </div>
+      <div class="swiper-slide timeline-slide">
+        <span>
+          <img class="imgs_" src="2.jpg"></span>
+      </div>
+      <div class="swiper-slide timeline-slide">
+        <span>
+          <img class="imgs_" src="2.jpg"></span>
+      </div>
+      <div class="swiper-slide timeline-slide">
+        <span>
+          <img class="imgs_" src="2.jpg"></span>
+      </div>
     </div>
-    <script src="style.js" .js"></script>
-    <script src="https://kit.fontawesome.com/41ce1100fc.js" crossorigin="anonymous"></script>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+    </section>
+
+
+
+  <script src="style.js" .js"></script>
+  <script src="https://kit.fontawesome.com/41ce1100fc.js" crossorigin="anonymous"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <!-- <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script> -->
+  <script src="./utlits.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script type="module">
+    const swiper = new Swiper(".swiper", {
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+      },
+
+      // Navigation arrows
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script src="https://kit.fontawesome.com/6026214fa8.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -29,12 +29,12 @@ icon.onclick = function()
     if(document.body.classList.contains("dark-theme"))
         {
             icon.className="fa-solid fa-sun";
-            console.log(1)
+            
     }
     else
     {
         icon.className="fa-solid fa-moon";
-        console.log(2)
+
     }
 }
 // function OnChangeCheckbox (checkbox){

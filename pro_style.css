@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
+@import url("https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css");
 :root {
     font-family: 'Poppins', sans-serif;
     --margin-var-nav: 30px;
@@ -42,7 +42,6 @@ body {
     content: "";
     position: absolute;
     width:  100%;
-    /* margin: 15px; */
     height: 3px;
     bottom: 1;
     left : 0;
@@ -135,15 +134,17 @@ nav ul li a::before{
     transition: all 0.6s ease;
 }
 img{
+    box-sizing: border-box;
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 35%;
+    /* height: 500px; */
     border-radius: 15px;
     margin: -150px 0 0 30px;
     box-shadow: 0px 0px 50px 1px var(--thr-color);
 }
 .p1
 {
+    box-sizing: border-box;
     display:flex;
     flex:2;
     margin: -400px 0 0 600px;
@@ -156,6 +157,7 @@ img{
 {
      /* margin:70px 0 0 -250px; 
      position: relative; */
+     box-sizing: border-box;
      display:flex;
      flex:3;
      position: relative;
@@ -205,6 +207,7 @@ p {
 
   .container {
     height: 100vh;
+    /* margin-bottom:px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,7 +219,7 @@ p {
     letter-spacing: 0.1rem;
     text-align: center;
     overflow: hidden;
-    margin:-300px 0 0 -200px;
+    margin:-300px 0 0 -100px;
   }
   
   .container p span.cursor {
@@ -236,3 +239,106 @@ p {
     99% { background-color: transparent; }
     100%  { background-color: #ccc; }
   }
+/* sections */
+.swiper {
+  width: 101%;
+  margin-top: 20px;
+  /* margin-bottom: 10px; */
+  /* padding-top: 10px; */
+  /* padding-bottom: 50px; */
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+
+  /* box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 15px 50px var(--thr-color);
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out; 
+  filter: blur(3px);
+}
+.swiper-slide-active
+{
+  filter: blur(0);
+}
+.swiper-slide-prev{
+  margin-right: 50px;
+}
+.swiper-slide-next{
+  margin-left: 50px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--sec-color);
+  transition: 0.3s ease-in-out;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: var(--sec-color);
+}
+.swiper-pagination-bullet {
+  transition: 0.15s ease-in-out;
+  background: var(--sec-color);
+}
+.swiper-pagination-bullet:hover {
+  background-color: var(--sec-color);
+  opacity: 0.8;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--sec-color);
+}
+
+/* image */
+
+.swiper-slide img {
+
+    display:block;
+    width: 100%;
+    /* overflow: hidden; */
+    /* flex:1; */
+    position: fixed;
+    margin: 0 0 0 0;
+    /* justify-content: space-between; */
+}
+section{
+  margin-top: -100px;
+  padding: 100px 0 100px 0 ;
+  background-color: var(--pri-color);
+}
+/* .name{
+  color: var(--sec-color);
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: -30px; 
+  padding-bottom: 50px; 
+} 
+
+ .name:hover{
+  color: var(--thr-color);
+  transition: all 0.6s ease;
+   margin: -10px 0 -10px 10px;   
+} */
+
+#photo {
+  font-size: 60px;
+  font-family: 'Monoton', cursive;
+  color: var(--sec-color);
+  margin: -100px 0 -10px 0;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+ 
+}
+
+#photo:hover{
+  color: var(--thr-color);
+  transition: all 0.6s ease;
+  margin: -100px 0 -10px 10px;  
+} 
