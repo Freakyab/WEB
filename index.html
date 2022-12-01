@@ -25,58 +25,48 @@
     </div>
     <div class="table">
       <ul>
-        <li><a href="#">Contant</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Home</a></li>
+        <li class="contact"><a href="#Contact">Contact</a></li>
+        <li class="Gallery"><a href="#Gallery">Gallery</a></li>
+        <li class="contact active"><a href="#Home">Home</a></li>
       </ul>
     </div>
   </nav>
   <div class="container">
     <img src="logo.jpg" class="fab-logo">
-    <!-- <span class="p1">
-        <p class ="typewriter">
-            Hi, I am FreakyAB</p>
-        </span>
 
-        <span>
-            <p id="p0" class="typewriter">
-                Photographer</p>
-        </span> -->
     <p #id="align">I am <span class="typed-text"><span class="cursor">&nbsp;</span></p>
     </span>
   </div>
   </div>
-  <section>
-    <div id="photo">Photographer</div>
+  <section id="Gallery">
+    <div id="photo">Gallery</div>
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide timeline-slide">
 
           <div style="justify-content: center; align-items: center">
-            <img class="imgs_" src="20190917_120504.jpg" align=centre>
-
-            <!-- <span><img src="20190917_120504.jpg"></span> -->
+            <img class="imgs_" src="imgs/1.jpg" align=centre>
           </div>
         </div>
         <div class="swiper-slide timeline-slide">
           <span>
-            <img class="imgs_" src="2.jpg"></span>
+            <img class="imgs_" src="imgs/2.jpg"></span>
         </div>
         <div class="swiper-slide timeline-slide">
           <span>
-            <img class="imgs_" src="3.jpg"></span>
+            <img class="imgs_" src="imgs/3.jpg"></span>
         </div>
         <div class="swiper-slide timeline-slide">
           <span>
-            <img class="imgs_" src="2.jpg"></span>
+            <img class="imgs_" src="imgs/4.jpg"></span>
         </div>
         <div class="swiper-slide timeline-slide">
           <span>
-            <img class="imgs_" src="2.jpg"></span>
+            <img class="imgs_" src="imgs/5.jpg"></span>
         </div>
         <div class="swiper-slide timeline-slide">
           <span>
-            <img class="imgs_" src="2.jpg"></span>
+            <img class="imgs_" src="imgs/6.jpg"></span>
         </div>
       </div>
       <!-- If we need pagination -->
@@ -95,25 +85,7 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <!-- <script>
-        var swiper = new Swiper(".mySwiper", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            coverflowEffect: {
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-            },
-        });
-    </script> -->
+
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script type="module">
     const swiper = new Swiper(".swiper", {

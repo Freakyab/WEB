@@ -258,11 +258,11 @@ p {
 
   /* box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); */
   box-shadow: 0 15px 50px var(--thr-color);
-  height: 400px;
+  height: 500px;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease-in-out; 
-  filter: blur(3px);
+  filter: blur(5px);
 }
 .swiper-slide-active
 {
@@ -300,10 +300,11 @@ p {
 .swiper-slide img {
     box-sizing: border-box;
     display:block;
-    width: 100%;
+    width: 110%;
+    aspect-ratio: 1/1.8;
     /* overflow: hidden; */
     /* flex:1; */
-    position: fixed;
+    position: relative;
     margin: 0 0 0 0;
     /* justify-content: space-between; */
 }
@@ -312,19 +313,6 @@ section{
   padding: 100px 0 100px 0 ;
   background-color: var(--pri-color);
 }
-/* .name{
-  color: var(--sec-color);
-  font-size: 50px;
-  font-weight: 600;
-  margin-top: -30px; 
-  padding-bottom: 50px; 
-} 
-
- .name:hover{
-  color: var(--thr-color);
-  transition: all 0.6s ease;
-   margin: -10px 0 -10px 10px;   
-} */
 
 #photo {
   font-size: 60px;
