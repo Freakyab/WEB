@@ -47,7 +47,7 @@ icon.onclick = function()
 // }
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
-const textArray = ["FreakyAB", "Photograper", "Coder", "Tech lover"];
+const textArray = ["FreakyAB", "photographer", "Coder", "Aryan"];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 200; // Delay between current and next text
