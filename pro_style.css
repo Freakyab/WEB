@@ -4,7 +4,8 @@
     font-family: 'Poppins', sans-serif;
     --margin-var-nav: 30px;
     --padd-var: 10px;
-    --light-theme: #CDF0EA;
+    --light-theme:background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(249,14,232,1) 0%, rgba(0,212,255,1) 100%);
     --pri-color: black;
     --sec-color: white;
     --thr-color: red;
@@ -126,7 +127,7 @@ nav ul li a::before{
     justify-content: right;
     top: 30px;
    right: 9px;
-   color: var(--light-theme);
+   color: var(--sec-color);
 }
 #one:hover{
     font-size: 40px;
@@ -342,34 +343,41 @@ section{
   justify-content: space-between;
   border-radius: 50px;
   flex-direction: row;
-  bottom: 13%;
+  bottom: 12.5%;
   left: 20%;
   font-size: 30px;
+  text-decoration: none;
+  gap: 10px;
 }
 
 #git{
   /* font-size: 30px; */
   /* position : relative; */
   padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius:10px ;
   color: var(--pri-color);
 }
 #git:hover{
-  color:red;
-  transition: all 0.6s ease;  
+/* font-size: 30px; */
+-webkit-box-shadow:0px 0px 33px 4px rgba(45,255,196,0.67);
+-moz-box-shadow: 0px 0px 33px 4px rgba(45,255,196,0.67);
+box-shadow: 0px 0px 33px 4px rgba(255, 17, 108, 0.714) inset, rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  /* color:blue; */
+  transition: all 0.6s ease;   
 }
 
 #insta{
   /* font-size: 30px; */
   /* position : relative; */
   padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius:10px ;
   color: var(--pri-color);
   border-width: 10px;
 }
 #insta:hover{
   /* font-size: 30px; */
-  color:red;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  color:slateblue:
   transition: all 0.6s ease;  
 }
 
@@ -379,26 +387,32 @@ section{
   /* position : relative; */
   color: var(--pri-color);
   padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
- border-width: 10px;
+  border-width: 10px;
+  border-radius:10px ;
 }
 #twitter:hover{
-  /* font-size: 30px; */
-  color:red;
-  transition: all 0.6s ease;  
+ /* font-size: 30px; */
+ -webkit-box-shadow:0px 0px 33px 4px rgba(45,255,196,0.67);
+ -moz-box-shadow: 0px 0px 33px 4px rgba(45,255,196,0.67);
+ box-shadow: 0px 0px 33px 4px rgba(68, 6, 255, 0.67) inset, rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+   /* color:blue; */
+   transition: all 0.6s ease;   
 }
 
 #facebook{
   /* font-size: 30px; */
   /* position : relative; */
   padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius:10px ;
   color: var(--pri-color);
- border-width: 10px;
+  border-width: 10px;
 }
 #facebook:hover{
   /* font-size: 30px; */
-  color:red;
+  -webkit-box-shadow:0px 0px 33px 4px rgba(45,255,196,0.67);
+-moz-box-shadow: 0px 0px 33px 4px rgba(45,255,196,0.67);
+box-shadow: 0px 0px 33px 4px rgba(68, 6, 255, 0.67) inset, rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  /* color:blue; */
   transition: all 0.6s ease;  
 }
 
