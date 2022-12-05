@@ -337,65 +337,62 @@ section{
 } 
 .social-media{
   display: flex;
-  /* position: absolute; */
+  position: relative;
+  width: 15%;
+  justify-content: space-between;
+  border-radius: 50px;
   flex-direction: row;
-  justify-items: center;
-  align-items: center;
- /* background-color: black; */
+  bottom: 15%;
+  left: 20%;
+  font-size: 30px;
+}
 
-  margin: -70px -130px 0 120px;
-}
-.social-media-insta{
-  width: 100px;
-  height: 40px;
-  margin: 0 0 0 120px;
+#git{
+  /* font-size: 30px; */
+  /* position : relative; */
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   color: var(--pri-color);
 }
-.social-media-insta:hover{
-  width: 110px;
-  height: 50px;
-  margin: 0 0 0 110px;
-  color:#f09433;
-  transition: all 0.6s ease;  
-}
-.social-media-twitter{
-  width: 100px;
-  height: 40px;
-  color: var(--pri-color);
-  /* margin: -170px 0 0 100px; */
-  
-  /* justify-content: center;
-  align-content: center; */
-}
-.social-media-twitter:hover{
-  width: 110px;
-  height: 50px;
-  color:blue;
-  transition: all 0.6s ease;  
-}
-.social-media-git{
-  width: 100px;
-  height: 40px;
-  color: var(--pri-color);
-  /* margin: -170px 0 0 200px; */
-
-}
-.social-media-git:hover{
-  width: 110px;
-  height: 50px;
+#git:hover{
   color:red;
   transition: all 0.6s ease;  
 }
-.social-media-facebook{
-  width: 100px;
-  height: 40px;
-  color:var(--pri-color);
-  /* margin: -170px 0 0 200px; */
 
+#insta{
+  /* font-size: 30px; */
+  /* position : relative; */
+  color: var(--pri-color);
+  border-width: 10px;
 }
-.social-media-facebook:hover{
-  width: 110px;
-  height: 50px;
-  color:blue;
+#insta:hover{
+  /* font-size: 30px; */
+  color:red;
   transition: all 0.6s ease;  
 }
+
+
+#twitter{
+  /* font-size: 30px; */
+  /* position : relative; */
+  color: var(--pri-color);
+ border-width: 10px;
+}
+#twitter:hover{
+  /* font-size: 30px; */
+  color:red;
+  transition: all 0.6s ease;  
+}
+
+#facebook{
+  /* font-size: 30px; */
+  /* position : relative; */
+  color: var(--pri-color);
+ border-width: 10px;
+}
+#facebook:hover{
+  /* font-size: 30px; */
+  color:red;
+  transition: all 0.6s ease;  
+}
+
