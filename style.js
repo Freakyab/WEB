@@ -103,3 +103,28 @@ window.onscroll = () => {
     }
   });
 };
+
+function slide_()
+        {
+            var temp = document.getElementById('slide');
+            temp.classList.toggle('active');
+        }
+        function rotate() {
+            
+            var time = new Date();
+            var sec = time.getSeconds();
+            var min = time.getMinutes();
+            var hr = time.getHours();
+            const secondsDegrees = ((sec / 60) * 360);
+            console.log(sec);
+            console.log(min);
+            var sechand = document.querySelector('.sec_hand');
+            var minhand = document.querySelector('.min_hand');
+            var hrhand = document.querySelector('.hour_hand');
+            sechand.style.transform = `rotate(${secondsDegrees}deg)`;
+            minhand.style.transform = `rotate(${380-min}deg)`;
+            hrhand.style.transform = `rotate(${-hr}deg)`;
+            // hrhand.style.transform = `rotate(${0}deg)`;
+            
+        }
+        setInterval(rotate, 1000);
